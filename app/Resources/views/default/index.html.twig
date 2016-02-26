@@ -2,26 +2,37 @@
 
 {% block stylesheets %}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/styles.css') }}">
 {% endblock %}
 
 {% block body %}
-    <div id="app">
+{#     <div id="app">
       ${ message }
-    </div>
-    <form>
-        <div class="row">
-          <div class="medium-6 columns">
-            <label>Input Label
-              <input type="text" placeholder=".medium-6.columns">
-            </label>
-          </div>
-          <div class="medium-6 columns">
-            <label>Input Label
-              <input type="text" placeholder=".medium-6.columns">
-            </label>
-          </div>
+    </div> #}
+
+    <div id="container">
+        <div class="loginDiv">
+            <form id="login">
+                <div class="row">
+                    <div class="columns large-4 large-offset-4 medium-8 medium-offset-2" id="_email">
+                        <input type="text" name="email" placeholder="Email" id="email" />
+                    </div>
+                </div>
+                <div class="row" id="_pass">
+                      <div class="columns large-4 large-offset-4 medium-8 medium-offset-2" id="pass">
+                        <input type="password" name="password" placeholder="Password" id="password" />
+                      </div>
+                </div>
+                <div class="row">
+                      <div class="columns large-4 large-offset-4 medium-8 medium-offset-2 clearfix">
+                        <button class="button left radius" >Log Me In</button>
+                        <button class="button right radius" >Sign Me In</button>
+                      </div>
+
+                </div>
+            </form>
         </div>
-      </form>
+    </div>
 {% endblock %}
 
 

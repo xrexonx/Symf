@@ -7,7 +7,7 @@
 	new Vue({
 	  	el: '#app',
 	  	data: {
-	    	message: 'Hello Vue.js users!',
+	    	message: '',
 	  		oUsers : {}
 	  	},
 	  	methods : {
