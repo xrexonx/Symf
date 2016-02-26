@@ -6,27 +6,27 @@
 {% endblock %}
 
 {% block body %}
-{#     <div id="app">
-      ${ message }
-    </div> #}
-
     <div id="container">
         <div class="loginDiv">
             <form id="login">
                 <div class="row">
-                    <div class="columns large-4 large-offset-4 medium-8 medium-offset-2" id="_email">
-                        <input type="text" name="email" placeholder="Email" id="email" />
+                    <div class="columns large-4 large-offset-4 medium-8 medium-offset-2">
+                        <input type="text" name="name" placeholder="Fullname"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="columns large-4 large-offset-4 medium-8 medium-offset-2">
+                        <input type="email" name="email" placeholder="Email"/>
                     </div>
                 </div>
                 <div class="row" id="_pass">
-                      <div class="columns large-4 large-offset-4 medium-8 medium-offset-2" id="pass">
-                        <input type="password" name="password" placeholder="Password" id="password" />
+                      <div class="columns large-4 large-offset-4 medium-8 medium-offset-2">
+                        <input type="password" name="password" placeholder="Password"/>
                       </div>
                 </div>
                 <div class="row">
                       <div class="columns large-4 large-offset-4 medium-8 medium-offset-2 clearfix">
-                        <a class="button radius">Log Me In</a>
-                        <a class="button radius" href="{{ path('signup') }}">Sign Me In</a>
+                        <button class="button right radius" >Sign Me In</button>
                       </div>
 
                 </div>
