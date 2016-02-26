@@ -5,14 +5,26 @@
 	Vue.config.delimiters = ['${', '}'];
 
 	new Vue({
-	  	el: '#app',
+	  	el: '#singUp',
 	  	data: {
-	    	message: '',
+	    	message: 'dfgdfgdfgdfgdfgdf',
 	  		oUsers : {}
 	  	},
 	  	methods : {
 	  		create: function() {
 
+	  			var sCb = function (response) {
+	  				// Manage response here..
+	  				console.log(response);
+	  			};
+
+	  			var oUsers = {
+	  				name: this.oUsers.name,
+	  				email: this.oUsers.email,
+	  				password: this.oUsers.password,
+	  			};
+
+	  			vHttp.send('/create', 'POST', oUsers, sCb);
 	  		},
 	  		edit: function(id, index) {
            

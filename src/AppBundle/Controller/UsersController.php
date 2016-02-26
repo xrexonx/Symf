@@ -15,4 +15,13 @@ class UsersController extends Controller
     {
         return $this->render('users/signup.html.twig', []);
     }
+
+    /**
+     * @Route("/create", name="create")
+     */
+    public function createAction (Request $request) {
+    	var_dump($request); die('rexon');
+    }
+
+    
 }
