@@ -1,0 +1,27 @@
+{
+  "name": "symf",
+  "version": "1.0.0",
+  "description": "Farming Symfony and Vuejs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xrexonx/Symf.git"
+  },
+  "keywords": [
+    "symfony",
+    "vuejs",
+    "foundation"
+  ],
+  "author": "Rexon A. De los Reyes <rexondelosreyes88@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xrexonx/Symf/issues"
+  },
+  "homepage": "https://github.com/xrexonx/Symf#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

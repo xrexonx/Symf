@@ -16,3 +16,6 @@
 /web/bundles/
 /tests/
 /bin/
+
+/node_modules
+.idea
