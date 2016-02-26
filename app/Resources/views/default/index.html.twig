@@ -73,9 +73,13 @@
         .sf-toolbar { opacity: 0; -webkit-animation: fade-in 1s .2s forwards; animation: fade-in 1s .2s forwards;}
     }
 </style>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.css">
 {% endblock %}
 
 
 {% block javascripts %}
+    <script src="https://cdn.jsdelivr.net/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/vue/1.0.16/vue.min.js"></script>
     <script type="text/javascript" src="{{ asset('assets/js/app.js') }}"></script>
 {% endblock %}
