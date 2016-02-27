@@ -20,7 +20,9 @@ class UsersController extends Controller
      * @Route("/create", name="create")
      */
     public function createAction (Request $request) {
-    	var_dump($request); die('rexon');
+    	$json_data = json_decode($request->getContent(), true);
+    	var_dump($json_data);
+    	die('rexon');
     }
 
     

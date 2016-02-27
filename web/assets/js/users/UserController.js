@@ -7,7 +7,6 @@
 	new Vue({
 	  	el: '#singUp',
 	  	data: {
-	    	message: 'dfgdfgdfgdfgdfgdf',
 	  		oUsers : {}
 	  	},
 	  	methods : {
