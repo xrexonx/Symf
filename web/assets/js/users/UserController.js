@@ -1,4 +1,4 @@
-! function (window) {
+! function () {
 	"use strict";
 
 	// Set another templating delimiters for vue, so that it will not conflict for symfony's twig templating
@@ -11,19 +11,12 @@
 	  	},
 	  	methods : {
 	  		create: function() {
-
 	  			var sCb = function (response) {
 	  				// Manage response here..
 	  				console.log(response);
 	  			};
 
-	  			var oUsers = {
-	  				name: this.oUsers.name,
-	  				email: this.oUsers.email,
-	  				password: this.oUsers.password,
-	  			};
-
-	  			vHttp.send('/create', 'POST', oUsers, sCb);
+	  			vHttp.send('/create', 'POST', this.oUsers, sCb);
 	  		},
 	  		edit: function(id, index) {
            
@@ -37,4 +30,4 @@
 	  	}
 	});
 
-}(window);
+}();
