@@ -5,7 +5,7 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * User
+ * AppBundle\Entity\User
  * @ORM\Entity
  * @ORM\Table(name="user")
  */
